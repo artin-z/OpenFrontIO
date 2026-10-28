@@ -32,6 +32,7 @@ COPY packages ./packages
 # ERR_MODULE_NOT_FOUND -- the unit suite cannot catch it, because only the
 # container build runs build-prod from a copied tree.
 COPY scripts ./scripts
+COPY tests ./tests
 
 ARG GIT_COMMIT=unknown
 ENV GIT_COMMIT="$GIT_COMMIT"
